@@ -1,6 +1,6 @@
 import matplotlib.pyplot as plt
 import numpy as np
-from sympy import *
+
 ####c_1(f_1) = 12 * (1 + 0.15*((f_1/1200)**4))
 ####c_2(f_2) = 18 * (1 + 0.15*((f_2/1500)**4))
 ####d = 3,500 vehicles/hour
@@ -76,7 +76,7 @@ for i in range(len(soc1)):
 print(x_point, y1_point, y2_point)
 '''''
 
-
+#绘制line2的行驶时间曲线对比图
 plt.xlabel('line2-flow')
 plt.ylabel('time')
 plt.plot(f_2, soc2, color = "r")
